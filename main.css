@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+   background-image: url("main.jpg");
+   background-size: cover;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font */
+body, html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between; /* To place the image and links apart */
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo (Image) on the left */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.logo {
+    max-width: 100%; 
+    height: 120px; /* Fixed height for the logo */
+    position: relative;
+    left: -40px;
+}
+
+/* Navigation Links on the right */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+
+.nav-links ul li {
+    display: inline-block;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #00bcd4; /* Color change on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 30px; /* Reduce padding for smaller screens */
+    }
+
+    .nav-links ul {
+        gap: 15px; /* Reduce gap between links */
+    }
+
+    .logo {
+        height: 40px; /* Smaller logo for mobile */
+    }
+}
+
+.hero {
+    background-image: url('elderly-care-banner.jpg'); /* Replace with a suitable image */
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    top: 50px;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    padding: 12px 25px;
+    font-size: 25px;
+    background-color: #008c9e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #008c9e;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services .service-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about, .contact {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 20px;
+}
